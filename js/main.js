@@ -35,7 +35,7 @@ fetch("http://localhost:3000/products").then(resp => resp.json()).then(json => {
         let newbuyBtn = document.createElement("a")
         newbuyBtn.id = "buyBtn"
         newbuyBtn.innerHTML = "buy Now"
-        newbuyBtn.href = './ditailse.html'
+        newbuyBtn.href = './ditalse.html'
 
         card.appendChild(newbuyBtn);
         cardTather.appendChild(card)
