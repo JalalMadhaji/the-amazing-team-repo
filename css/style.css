@@ -1,3 +1,26 @@
+/* ditalse page */
+
+h3{
+    color: blueviolet;
+    
+}
+.imagpro{
+    width: 100%;
+}
+.productdi{
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+    margin-left: 52px;
+}
+.sp{
+    font-size: 30px;
+    color: brown;
+}
+.hh{
+    color: red;
+    font-size: 50px;
+}
 * {
   margin: 0px;
   padding: 0;
