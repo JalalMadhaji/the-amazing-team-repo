@@ -32,9 +32,10 @@ fetch("http://localhost:3000/products").then(resp => resp.json()).then(json => {
         card.appendChild(price);
 
 
-        let newbuyBtn = document.createElement("button")
+        let newbuyBtn = document.createElement("a")
         newbuyBtn.id = "buyBtn"
-        newbuyBtn.innerHTML = "Buy Now"
+        newbuyBtn.innerHTML = "buy Now"
+        newbuyBtn.href = './ditalse.html'
 
         card.appendChild(newbuyBtn);
         cardTather.appendChild(card)
@@ -52,24 +53,24 @@ let buyBtn = document.getElementById("buyBtn");
 
 
 const addNewProduct = (id, form) => {
-  fetch("http://localhost:3000/products", {
-    method: "POST",
-    headers: {
-      Accept: "application/json, text/plain, /",
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      id: id,
-      name: form.name.value,
-      desc: form.desc.value,
-      image: form.image.value,
-      price: form.price.value
+    fetch("http://localhost:3000/products", {
+        method: "POST",
+        headers: {
+            Accept: "application/json, text/plain, /",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            id: id,
+            name: form.name.value,
+            desc: form.desc.value,
+            image: form.image.value,
+            price: form.price.value
+        })
     })
-  })
-    .then(respose => {
-      return respose.json();
-    })
-    .then(data => {
-      window.location.href = "./index.html";
-    });
+        .then(respose => {
+            return respose.json();
+        })
+        .then(data => {
+            window.location.href = "./index.html";
+        });
 };
