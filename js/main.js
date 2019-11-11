@@ -17,13 +17,13 @@ fetch("http://localhost:3000/products").then(resp => resp.json()).then(json => {
 
         let title = document.createElement("h5")
         title.id = "title"
-        title.innerHTML = json[element]["title"];
+        title.innerHTML = json[element]["name"];
         card.appendChild(title);
 
 
         let desc = document.createElement("p")
         desc.id = "desc"
-        desc.innerHTML = json[element]["desc"];
+        desc.innerHTML = json[element]["desc"].substring(1, 80)
         card.appendChild(desc);
 
         let price = document.createElement("span")
