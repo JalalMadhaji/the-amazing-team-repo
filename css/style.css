@@ -50,7 +50,7 @@ ul#card span {
   margin: auto;
 }
 button,
-a {
+#card a {
   background: rgb(255, 217, 0);
   display: inline-block;
   text-decoration: none;
