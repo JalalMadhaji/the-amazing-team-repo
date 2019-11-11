@@ -26,11 +26,13 @@ ul#card {
 ul#card li {
   border-radius: 5px;
   box-shadow: 0 0 5px;
+  background: white;
   /* padding: 0 0 20px 0; */
 }
 ul img {
   width: 100%;
   height: 200px;
+  border-radius: 5px 5px 0 0;
 }
 ul#card li h5 {
   margin: 10px auto;
@@ -57,7 +59,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  box-shadow: 0 0 5px;
+  box-shadow: 0 0 5px #aaa;
   padding: 7px 30px;
   margin: 20px auto;
 }
